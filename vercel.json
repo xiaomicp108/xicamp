@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/data.js": { "maxDuration": 30, "memory": 1024 }
+  },
+  "headers": [
+    { "source": "/data/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] }
+  ]
+}
